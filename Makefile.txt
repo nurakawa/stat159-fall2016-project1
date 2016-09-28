@@ -1,17 +1,15 @@
-.PHONEY: all clean
+.PHONEY: clean
 
-#all
+#all: creates the paper files
 all: paper.md paper.html 
 
 #creating paper.md
-
-paper.md: 00-*.md 01-*.md 02-*.md 03-*.md
+paper.md: paper/sections/00-abstract.md paper/sections/01-introduction.md paper/sections/02-discussion.md paper/sections/03-conclusions.md
 	pandoc *.md -s -o paper/paper.md
 	
 #creating paper.html
 paper.html: paper.md
-	cd ..
-	pandoc paper.md -s -o paper.html
+	pandoc paper/paper.md -s -o paper/paper.html
 
 
 #remove .html file
