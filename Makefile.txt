@@ -5,7 +5,7 @@ all: paper.md paper.html
 
 #creating paper.md
 paper.md: paper/sections/00-abstract.md paper/sections/01-introduction.md paper/sections/02-discussion.md paper/sections/03-conclusions.md
-	pandoc *.md -s -o paper/paper.md
+	pandoc paper/sections/*.md -s -o paper/paper.md
 	
 #creating paper.html
 paper.html: paper.md
