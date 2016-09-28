@@ -1,1 +1,22 @@
-#initial
+.PHONEY: all clean
+
+#all
+all: paper.md paper.html 
+
+#creating paper.md
+
+paper.md: 00-*.md 01-*.md 02-*.md 03-*.md
+	pandoc *.md -s -o paper/paper.md
+	
+#creating paper.html
+paper.html: paper.md
+	cd ..
+	pandoc paper.md -s -o paper.html
+
+
+#remove .html file
+clean:
+	rm -f *.html
+
+
+	
