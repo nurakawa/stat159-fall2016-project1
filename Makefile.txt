@@ -14,7 +14,7 @@ paper.html: paper.md
 
 #remove .html file
 clean:
-	rm -f *.html
+	rm -f paper/*.html
 
 
 	
