@@ -50,7 +50,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <h1 id="abstract">Abstract</h1>
 <p>Open science and reproducbility have become hot topics in the field of research. By why? This document explains the concept of reproducibility and explores tools that encourage best practices for open and reproducible reserach.</p>
-<h1 id="introduction">Introduction</h1>
 <p><strong>What is reproducibility?</strong><br />
 Put simply, <em>reproducibility</em> is the ability for anyone to re-create his own or another person's work. This could be something as simple as a data-cleaning script or as complex as a computer operating system. An experiment is reproducible if any researcher can obtain the same results using the same original data and following the same outlined procedures.</p>
 <p><strong>Why is reproducibility important?</strong><br />
@@ -59,12 +58,29 @@ The results of an experiment are useful if and only if they are reproducible. In
 <p>&quot;...reproducibility is important not because it ensures that the results are correct, but rather because it ensures transparency and gives us confidence in understanding exactly what was done.[1]&quot;</p>
 </blockquote>
 <p>The requirement of reproducibility also places a check on accidental results, careless errors, or falsifications. Researchers are forced to work meticulously and in an organized manner such that their work can be repeated by others, or themselves. It also allows for experimental results to be used in industry settings with higher confidence of success.</p>
+<p><strong>What makes work reproducible?</strong> While there do not exist strict guidelines, reproducible works share the following characteristics:</p>
+<ol style="list-style-type: decimal">
+<li>They are publically available and accessible.</li>
+</ol>
+<p>Open-source data and programs ensure that no researcher is inhibited from collaboration and reproduction of work due to lack of accessiblity.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>They are easy to read and to understand. <a href="#markdown">markdown</a></li>
+<li>They are well-organized and centralized and do not rely heavily on technology.[git]</li>
+</ol>
+<p>Work that is not well-organized and kept in a centrallized location becomes difficult to replicate. In addition, material that is heavily dependent on specific technologies exclude populations (for example, programs that run only on Windows operating systems exclude users of Linux or IOS).</p>
 <p><strong>What is Open Science, and how does it encourage reproducibility?</strong></p>
 <p><em>Open Science</em> encourages researchers to make the entirety of their work - data, methods, and computer scripts - publically available. Work that is open can be reproduced easily.</p>
 <blockquote>
 <p>&quot;Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.[2]&quot;</p>
 </blockquote>
-<p>This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science. ##GNU Make and Makefiles</p>
+<p>This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science. <strong>What makes work reproducible?</strong> While there do not exist strict guidelines, reproducible works share the following characteristics:</p>
+<ol style="list-style-type: decimal">
+<li>They are publically available and accessible.</li>
+<li>They are easy to read and to understand.</li>
+<li>They are well-organized and centralized, and usable with most common devices and operating systems.</li>
+</ol>
+<p>Work that is not well-organized and kept in a centrallized location becomes difficult to replicate. In addition, material that is heavily dependent on specific technologies exclude populations (for example, programs that run only on Windows operating systems exclude users of Linux or IOS).</p>
+<h2 id="gnu-make-and-makefiles">GNU Make and Makefiles</h2>
 <p>The paper you are currently reading was assembled using a Makefile. By running a Makefile a user can execute a program</p>
 <p>By writing a Makefile and executing it with GNU Make, a user can automate the command line.</p>
 <p>Makefiles encourage reproducibility by ____________.</p>
@@ -88,6 +104,7 @@ The results of an experiment are useful if and only if they are reproducible. In
 <img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png" alt="Markdown Logo" />
 <p class="caption">Markdown Logo</p>
 </div>
+<h1 id="ask-how-to-edit-image-size-without-html">ASK HOW TO EDIT IMAGE SIZE WITHOUT HTML</h1>
 <p>Created in 2004 by John Gruber and Aaron Swartz, <em>Markdown</em> is a simple markup language with plain text that can be converted to HTML [2]. <strong>Markdown encourages reproducibility through its simplicity and readability</strong>. Markdown is extremely easy to learn and to follow, while HTML (and similar languages) has syntax that is more complex. Furthermore, Markdown documents can be read as-is, whereas Rich Text Formals and HTML surround words by tags that clutter the text. Take a look at the example below:</p>
 <p><strong>Example 1: Markdown vs. HTML</strong></p>
 <p>Suppose that you are a researcher who wants to produce this short sentence to be displayed on a web browser:</p>

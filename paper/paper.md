@@ -14,9 +14,6 @@ research. By why? This document explains the concept of reproducibility
 and explores tools that encourage best practices for open and
 reproducible reserach.
 
-Introduction
-============
-
 **What is reproducibility?**\
 Put simply, *reproducibility* is the ability for anyone to re-create his
 own or another person's work. This could be something as simple as a
@@ -41,6 +38,24 @@ repeated by others, or themselves. It also allows for experimental
 results to be used in industry settings with higher confidence of
 success.
 
+**What makes work reproducible?** While there do not exist strict
+guidelines, reproducible works share the following characteristics:
+
+1)  They are publically available and accessible.
+
+Open-source data and programs ensure that no researcher is inhibited
+from collaboration and reproduction of work due to lack of accessiblity.
+
+2)  They are easy to read and to understand. [markdown](#markdown)
+3)  They are well-organized and centralized and do not rely heavily on
+    technology.\[git\]
+
+Work that is not well-organized and kept in a centrallized location
+becomes difficult to replicate. In addition, material that is heavily
+dependent on specific technologies exclude populations (for example,
+programs that run only on Windows operating systems exclude users of
+Linux or IOS).
+
 **What is Open Science, and how does it encourage reproducibility?**
 
 *Open Science* encourages researchers to make the entirety of their work
@@ -58,7 +73,23 @@ source code and documentation is freely available online) tools that
 encourage the practice of Open Science and ultimately enable
 reproducibility. This paper discusses several of these recent
 developments and explores how they facilitate reproducibility and
-contribute to Open Science. \#\#GNU Make and Makefiles
+contribute to Open Science. **What makes work reproducible?** While
+there do not exist strict guidelines, reproducible works share the
+following characteristics:
+
+1)  They are publically available and accessible.
+2)  They are easy to read and to understand.
+3)  They are well-organized and centralized, and usable with most common
+    devices and operating systems.
+
+Work that is not well-organized and kept in a centrallized location
+becomes difficult to replicate. In addition, material that is heavily
+dependent on specific technologies exclude populations (for example,
+programs that run only on Windows operating systems exclude users of
+Linux or IOS).
+
+GNU Make and Makefiles
+----------------------
 
 The paper you are currently reading was assembled using a Makefile. By
 running a Makefile a user can execute a program
@@ -111,6 +142,9 @@ Markdown
 
 ![Markdown
 Logo](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png)
+
+ASK HOW TO EDIT IMAGE SIZE WITHOUT HTML
+=======================================
 
 Created in 2004 by John Gruber and Aaron Swartz, *Markdown* is a simple
 markup language with plain text that can be converted to HTML \[2\].
