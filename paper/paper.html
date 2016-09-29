@@ -49,36 +49,58 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1 class="title">Stat 159 Project</h1>
 </div>
 <h1 id="abstract">Abstract</h1>
-<p>This is a description of what the paper is.</p>
+<p>Open science and reproducbility have become hot topics in the field of research. By why? This document explains the concept of reproducibility and explores tools that encourage best practices for open and reproducible reserach.</p>
 <h1 id="introduction">Introduction</h1>
-<p>This is the introduction. Isn't it nice. #Discussion</p>
-<h2 id="gnu-make-and-makefiles">GNU Make and Makefiles</h2>
+<p><strong>What is reproducibility?</strong><br />
+Put simply, <em>reproducibility</em> is the ability for anyone to re-create his own or another person's work. This could be something as simple as a data-cleaning script or as complex as a computer operating system. An experiment is reproducible if any researcher can obtain the same results using the same original data and following the same outlined procedures.</p>
+<p><strong>Why is reproducibility important?</strong><br />
+The results of an experiment are useful if and only if they are reproducible. Inevitably, statistical analysis involves randomness and noise that can impact results. Reproducing results is a way of validating them and minimizing the impact of uncontrollable variables.</p>
+<blockquote>
+<p>&quot;...reproducibility is important not because it ensures that the results are correct, but rather because it ensures transparency and gives us confidence in understanding exactly what was done.[1]&quot;</p>
+</blockquote>
+<p>The requirement of reproducibility also places a check on accidental results, careless errors, or falsifications. Researchers are forced to work meticulously and in an organized manner such that their work can be repeated by others, or themselves. It also allows for experimental results to be used in industry settings with higher confidence of success.</p>
+<p><strong>What is Open Science, and how does it encourage reproducibility?</strong></p>
+<p><em>Open Science</em> encourages researchers to make the entirety of their work - data, methods, and computer scripts - publically available. Work that is open can be reproduced easily.</p>
+<blockquote>
+<p>&quot;Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.[2]&quot;</p>
+</blockquote>
+<p>This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science. ##GNU Make and Makefiles</p>
 <p>The paper you are currently reading was assembled using a Makefile. By running a Makefile a user can execute a program</p>
 <p>By writing a Makefile and executing it with GNU Make, a user can automate the command line.</p>
 <p>Makefiles encourage reproducibility by ____________.</p>
 <p>&quot;<strong>GNU Make</strong> is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the <em>makefile</em>, which lists each of the non-source files and how to compute it from other files. [1]&quot;.</p>
-<p>For example, if yo</p>
-<h2 id="git">Git</h2>
-<h2 id="github">Github</h2>
-<h2 id="pandoc">Pandoc</h2>
+<h2 id="git-and-github">Git and Github</h2>
+<p>Git is a free, open-source <em>version control system</em> that allows users to locally and globally create, edit, and organize directories and files; version control systems record changes to files over time so that users can recall specific versions later[3]. Git was created in 2005 by Linus Torvalds, whose goal was to improve efficiency and facilitate collaboration in software development projects.</p>
+<p>How does Git encourage reproducibility?</p>
+<ul>
+<li><p>Git is <strong>free</strong> and <strong>open-source</strong>, allowing anyone access. ..* Git is maintained regularly by Junio Hamano.<br />
+..* Non-affiliated individuals can download the documentation, reproduce it, and update it.</p></li>
+<li><p>Git is simple and easy to learn. ..* Its command line, Git Bash, works similarly to those built into computers, making the Git system easy to control and access. ..* A detailed, regularly-updated manual is available online. ..* A plethora of blog posts and tutorials encourage</p></li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Git encourages collaboration through its online server <strong>Github</strong>.</li>
+</ol>
 <hr />
+<h2 id="pandoc">Pandoc</h2>
+<p>Pandoc is a universal document converter.</p>
 <h2 id="markdown">Markdown</h2>
 <div class="figure">
 <img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png" alt="Markdown Logo" />
 <p class="caption">Markdown Logo</p>
 </div>
-<p>Created in 2004 by John Gruber and Aaron Swartz, <em>Markdown</em> is a simple markup language with plain text that can be converted to HTML [2]. Markdown encourages reproducibility through its simplicity and readability - Markdown documents can be read as-is, as opposed to Rich Text Formals and HTML, where words are surrounded by tags and formatting.Take a look at the example below:</p>
-<h4 id="output">Output</h4>
+<p>Created in 2004 by John Gruber and Aaron Swartz, <em>Markdown</em> is a simple markup language with plain text that can be converted to HTML [2]. <strong>Markdown encourages reproducibility through its simplicity and readability</strong>. Markdown is extremely easy to learn and to follow, while HTML (and similar languages) has syntax that is more complex. Furthermore, Markdown documents can be read as-is, whereas Rich Text Formals and HTML surround words by tags that clutter the text. Take a look at the example below:</p>
+<p><strong>Example 1: Markdown vs. HTML</strong></p>
+<p>Suppose that you are a researcher who wants to produce this short sentence to be displayed on a web browser:</p>
 <p>Text attributes <em>italic</em>, <em>italic</em>, <strong>bold</strong>, <strong>bold</strong>, <code>monospace</code>.</p>
-<h4 id="html-language">HTML Language</h4>
+<p>You could either use HTML:</p>
 <div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Text attributes <span class="kw">&lt;em&gt;</span>italic<span class="kw">&lt;/em&gt;</span>, <span class="kw">&lt;em&gt;</span>italic<span class="kw">&lt;/em&gt;</span>, <span class="kw">&lt;strong&gt;</span>bold<span class="kw">&lt;/strong&gt;</span>, <span class="kw">&lt;strong&gt;</span>bold<span class="kw">&lt;/strong&gt;</span>, <span class="kw">&lt;code&gt;</span>monospace<span class="kw">&lt;/code&gt;</span>.<span class="kw">&lt;/p&gt;</span></code></pre></div>
-<h4 id="markdown-language">Markdown Language</h4>
+<p>Or Markdown:</p>
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">Text attributes _italic_, *italic*, __bold__, **bold**, <span class="bn">`monospace`</span>.</code></pre></div>
-<p>Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and reproduce them.</p>
-<h1 id="references">References</h1>
-<p>[1] GNU Make, https://www.gnu.org/software/make/<br />
-[2] Wikipedia, https://en.wikipedia.org/wiki/Markdown<br />
-#Conclusion This took me a bit of time!</p>
+<p>Which would you choose?</p>
+<p>Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and to reproduce them. The Markdown language encourages reproducibility through providing a simple and easy-to-read platform for writing text documents.</p>
+<h1 id="conclusion">Conclusion</h1>
 <h2 id="resources">Resources</h2>
+<p>[1] GNU Make, https://www.gnu.org/software/make/<br />
+[2] Wikipedia, https://en.wikipedia.org/wiki/Markdown</p>
 </body>
 </html>

@@ -1,5 +1,3 @@
-#Discussion
-
 ##GNU Make and Makefiles
 
 The paper you are currently reading was assembled using a Makefile.
@@ -12,48 +10,59 @@ Makefiles encourage reproducibility by ____________.
 
 "**GNU Make** is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the *makefile*, which lists each of the non-source files and how to compute it from other files. [1]".
 
-For example, if yo
+ 
+##Git and Github
+
+Git is a free, open-source _version control system_ that allows users to locally and globally create, edit, and organize directories and files; version control systems record changes to files over time so that users can recall specific versions later[3].  Git was created in 2005 by Linus Torvalds, whose goal was to improve efficiency and facilitate collaboration in software development projects.  
+
+How does Git encourage reproducibility?  
+
+* Git is __free__ and __open-source__, allowing anyone access.
+..* Git is maintained regularly by Junio Hamano.  
+..* Non-affiliated individuals can download the documentation, reproduce it, and update it.
+
+* Git is simple and easy to learn.
+..* Its command line, Git Bash, works similarly to those built into computers, making the Git system easy to control and access.
+..* A detailed, regularly-updated manual is available online.
+..* A plethora of blog posts and tutorials encourage 
+
+3. Git encourages collaboration through its online server __Github__.
 
 
-##Git
-
-
-##Github
-
-
+----------------------------------------------------------------------------------------------------------
 ##Pandoc
 
-***
+Pandoc is a universal document converter.
+
+
+
 ##Markdown  
 
 ![Markdown Logo](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/markdown-logo.png)
 
-
-Created in 2004 by John Gruber and Aaron Swartz, *Markdown* is a simple markup language with plain text that can be converted to HTML [2]. Markdown encourages reproducibility through its simplicity and readability - Markdown documents can be read as-is, as opposed to Rich Text Formals and HTML, where words are surrounded by tags and formatting.Take a look at the example below:
-
+Created in 2004 by John Gruber and Aaron Swartz, _Markdown_ is a simple markup language with plain text that can be converted to HTML [2]. __Markdown encourages reproducibility through its simplicity and readability__. Markdown is extremely easy to learn and to follow, while HTML (and similar languages) has syntax that is more complex. Furthermore, Markdown documents can be read as-is, whereas Rich Text Formals and HTML surround words by tags that clutter the text. Take a look at the example below:
 
 
+__Example 1: Markdown vs. HTML__
 
-####Output
+Suppose that you are a researcher who wants to produce this short sentence to be displayed on a web browser:
+
 Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
   
-####HTML Language
+You could either use HTML:
+
 ```html
 <p>Text attributes <em>italic</em>, <em>italic</em>, <strong>bold</strong>, <strong>bold</strong>, <code>monospace</code>.</p>
 ```
-####Markdown Language
+
+Or Markdown:
+
 ```markdown
 Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
 ```
 
-Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and reproduce them.  
+Which would you choose?
 
 
+Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and to reproduce them. The Markdown language encourages reproducibility through providing a simple and easy-to-read platform for writing text documents.
 
-
-
-
-
-#References
-[1] GNU Make, https://www.gnu.org/software/make/  
-[2] Wikipedia, https://en.wikipedia.org/wiki/Markdown  
