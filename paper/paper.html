@@ -4,23 +4,81 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
+  <title>Stat 159 Project</title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
 </head>
 <body>
+<div id="header">
+<h1 class="title">Stat 159 Project</h1>
+</div>
 <h1 id="abstract">Abstract</h1>
 <p>This is a description of what the paper is.</p>
-<p>But why is the makefile going so horribly wrong? #Introduction</p>
+<h1 id="introduction">Introduction</h1>
 <p>This is the introduction. Isn't it nice. #Discussion</p>
-<p>1234</p>
-<h2 id="makefile">Makefile</h2>
-<p>Need to fix...</p>
+<h2 id="gnu-make-and-makefiles">GNU Make and Makefiles</h2>
+<p>The paper you are currently reading was assembled using a Makefile. By running a Makefile a user can execute a program</p>
+<p>By writing a Makefile and executing it with GNU Make, a user can automate the command line.</p>
+<p>Makefiles encourage reproducibility by ____________.</p>
+<p>&quot;<strong>GNU Make</strong> is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the <em>makefile</em>, which lists each of the non-source files and how to compute it from other files. [1]&quot;.</p>
+<p>For example, if yo</p>
 <h2 id="git">Git</h2>
 <h2 id="github">Github</h2>
 <h2 id="pandoc">Pandoc</h2>
+<hr />
 <h2 id="markdown">Markdown</h2>
-<h1 id="conclusion">Conclusion</h1>
-<p>This took me a bit of time!</p>
+<div class="figure">
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png" alt="Markdown Logo" />
+<p class="caption">Markdown Logo</p>
+</div>
+<p>Created in 2004 by John Gruber and Aaron Swartz, <em>Markdown</em> is a simple markup language with plain text that can be converted to HTML [2]. Markdown encourages reproducibility through its simplicity and readability - Markdown documents can be read as-is, as opposed to Rich Text Formals and HTML, where words are surrounded by tags and formatting.Take a look at the example below:</p>
+<h4 id="output">Output</h4>
+<p>Text attributes <em>italic</em>, <em>italic</em>, <strong>bold</strong>, <strong>bold</strong>, <code>monospace</code>.</p>
+<h4 id="html-language">HTML Language</h4>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Text attributes <span class="kw">&lt;em&gt;</span>italic<span class="kw">&lt;/em&gt;</span>, <span class="kw">&lt;em&gt;</span>italic<span class="kw">&lt;/em&gt;</span>, <span class="kw">&lt;strong&gt;</span>bold<span class="kw">&lt;/strong&gt;</span>, <span class="kw">&lt;strong&gt;</span>bold<span class="kw">&lt;/strong&gt;</span>, <span class="kw">&lt;code&gt;</span>monospace<span class="kw">&lt;/code&gt;</span>.<span class="kw">&lt;/p&gt;</span></code></pre></div>
+<h4 id="markdown-language">Markdown Language</h4>
+<div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">Text attributes _italic_, *italic*, __bold__, **bold**, <span class="bn">`monospace`</span>.</code></pre></div>
+<p>Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and reproduce them.</p>
+<h1 id="references">References</h1>
+<p>[1] GNU Make, https://www.gnu.org/software/make/<br />
+[2] Wikipedia, https://en.wikipedia.org/wiki/Markdown<br />
+#Conclusion This took me a bit of time!</p>
 <h2 id="resources">Resources</h2>
 </body>
 </html>
