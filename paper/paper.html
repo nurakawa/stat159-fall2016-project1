@@ -48,63 +48,39 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title">Stat 159 Project</h1>
 </div>
-<h1 id="abstract">Abstract</h1>
-<p>Open science and reproducbility have become hot topics in the field of research. By why? This document explains the concept of reproducibility and explores tools that encourage best practices for open and reproducible reserach.</p>
-<p><strong>What is reproducibility?</strong><br />
-Put simply, <em>reproducibility</em> is the ability for anyone to re-create his own or another person's work. This could be something as simple as a data-cleaning script or as complex as a computer operating system. An experiment is reproducible if any researcher can obtain the same results using the same original data and following the same outlined procedures.</p>
-<p><strong>Why is reproducibility important?</strong><br />
-The results of an experiment are useful if and only if they are reproducible. Inevitably, statistical analysis involves randomness and noise that can impact results. Reproducing results is a way of validating them and minimizing the impact of uncontrollable variables.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Reproducibility is key to the advancement of science and has become a topic of great importance in the field of Statistical Data Analysis.<br />
+This paper explains the concept of reproducibility and its relation to open science. It then discusses the tools Git, Make, Markdown, and Pandoc and their roles in facilitating best practices for open and reproducible reserach. This paper draws from concepts taught in Stat 159.</p>
+<div class="figure">
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/stat159-logo.png" />
+
+</div>
+<h2 id="what-is-reproducibility">What is reproducibility?</h2>
+<p>Put simply, <em>reproducibility</em> is the ability for anyone to re-create his own or another person's work. This could be something as simple as a data-cleaning script or as complex as a computer operating system. An experiment is reproducible if any researcher can obtain the same results using the same original data and following the same outlined procedures.</p>
+<h2 id="why-is-reproducibility-important">Why is reproducibility important?</h2>
+<p>The results of an experiment are useful if and only if they are reproducible. Inevitably, statistical analysis involves randomness and noise that can impact results. Reproducing results is a way of validating them and minimizing the impact of uncontrollable variables.</p>
 <blockquote>
 <p>&quot;...reproducibility is important not because it ensures that the results are correct, but rather because it ensures transparency and gives us confidence in understanding exactly what was done.[1]&quot;</p>
 </blockquote>
 <p>The requirement of reproducibility also places a check on accidental results, careless errors, or falsifications. Researchers are forced to work meticulously and in an organized manner such that their work can be repeated by others, or themselves. It also allows for experimental results to be used in industry settings with higher confidence of success.</p>
-<p><strong>What makes work reproducible?</strong> While there do not exist strict guidelines, reproducible works share the following characteristics:</p>
-<ol style="list-style-type: decimal">
-<li>They are publically available and accessible.</li>
-</ol>
-<p>Open-source data and programs ensure that no researcher is inhibited from collaboration and reproduction of work due to lack of accessiblity.</p>
-<ol start="2" style="list-style-type: decimal">
-<li>They are easy to read and to understand. <a href="#markdown">markdown</a></li>
-<li>They are well-organized and centralized and do not rely heavily on technology.[git]</li>
-</ol>
-<p>Work that is not well-organized and kept in a centrallized location becomes difficult to replicate. In addition, material that is heavily dependent on specific technologies exclude populations (for example, programs that run only on Windows operating systems exclude users of Linux or IOS).</p>
-<p><strong>What is Open Science, and how does it encourage reproducibility?</strong></p>
+<h2 id="what-is-open-science-and-how-does-it-encourage-reproducibility">What is Open Science, and how does it encourage reproducibility?</h2>
 <p><em>Open Science</em> encourages researchers to make the entirety of their work - data, methods, and computer scripts - publically available. Work that is open can be reproduced easily.</p>
 <blockquote>
 <p>&quot;Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.[2]&quot;</p>
 </blockquote>
-<p>This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science. <strong>What makes work reproducible?</strong> While there do not exist strict guidelines, reproducible works share the following characteristics:</p>
+<p>This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science. ##What makes work reproducible? While there do not exist strict guidelines, reproducible works share the following characteristics:</p>
 <ol style="list-style-type: decimal">
-<li>They are publically available and accessible.</li>
+<li>They are publically available and accessible, encouraging Open Science.</li>
 <li>They are easy to read and to understand.</li>
 <li>They are well-organized and centralized, and usable with most common devices and operating systems.</li>
 </ol>
-<p>Work that is not well-organized and kept in a centrallized location becomes difficult to replicate. In addition, material that is heavily dependent on specific technologies exclude populations (for example, programs that run only on Windows operating systems exclude users of Linux or IOS).</p>
-<h2 id="gnu-make-and-makefiles">GNU Make and Makefiles</h2>
-<p>The paper you are currently reading was assembled using a Makefile. By running a Makefile a user can execute a program</p>
-<p>By writing a Makefile and executing it with GNU Make, a user can automate the command line.</p>
-<p>Makefiles encourage reproducibility by ____________.</p>
-<p>&quot;<strong>GNU Make</strong> is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the <em>makefile</em>, which lists each of the non-source files and how to compute it from other files. [1]&quot;.</p>
-<h2 id="git-and-github">Git and Github</h2>
-<p>Git is a free, open-source <em>version control system</em> that allows users to locally and globally create, edit, and organize directories and files; version control systems record changes to files over time so that users can recall specific versions later[3]. Git was created in 2005 by Linus Torvalds, whose goal was to improve efficiency and facilitate collaboration in software development projects.</p>
-<p>How does Git encourage reproducibility?</p>
-<ul>
-<li><p>Git is <strong>free</strong> and <strong>open-source</strong>, allowing anyone access. ..* Git is maintained regularly by Junio Hamano.<br />
-..* Non-affiliated individuals can download the documentation, reproduce it, and update it.</p></li>
-<li><p>Git is simple and easy to learn. ..* Its command line, Git Bash, works similarly to those built into computers, making the Git system easy to control and access. ..* A detailed, regularly-updated manual is available online. ..* A plethora of blog posts and tutorials encourage</p></li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Git encourages collaboration through its online server <strong>Github</strong>.</li>
-</ol>
-<hr />
-<h2 id="pandoc">Pandoc</h2>
-<p>Pandoc is a universal document converter.</p>
+<p>We will see that tools that facilitate reproducible research make improvements in at least one of the three critereon. Statistical Data Analysis reserach specifically involves processing data, analyzing data through programming, and outputting writing, figures and images. In processing data, programmers write scripts and create a network of files. <strong>Git</strong> and its online base <strong>Github</strong> have dramatically improved organization and facilitated collaboration. <strong>GNU Make</strong> adds a functional automative processing tool making it easy for new users to reproduce a file system. Traditionally, output documents to be viewed in web browsers have been written in html; <strong>Markdown</strong> language was developed to make it easier to write and to read such documents. To make output accessible through almost any extension, <strong>Pandoc</strong> allows for easy document conversion.</p>
+<p>All of these tools are <em>free</em> and <em>open-source</em>, and each project encourages users to contribute their work to the movement of Open Science.</p>
 <h2 id="markdown">Markdown</h2>
 <div class="figure">
-<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png" alt="Markdown Logo" />
-<p class="caption">Markdown Logo</p>
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png" />
+
 </div>
-<h1 id="ask-how-to-edit-image-size-without-html">ASK HOW TO EDIT IMAGE SIZE WITHOUT HTML</h1>
 <p>Created in 2004 by John Gruber and Aaron Swartz, <em>Markdown</em> is a simple markup language with plain text that can be converted to HTML [2]. <strong>Markdown encourages reproducibility through its simplicity and readability</strong>. Markdown is extremely easy to learn and to follow, while HTML (and similar languages) has syntax that is more complex. Furthermore, Markdown documents can be read as-is, whereas Rich Text Formals and HTML surround words by tags that clutter the text. Take a look at the example below:</p>
 <p><strong>Example 1: Markdown vs. HTML</strong></p>
 <p>Suppose that you are a researcher who wants to produce this short sentence to be displayed on a web browser:</p>
@@ -115,7 +91,47 @@ The results of an experiment are useful if and only if they are reproducible. In
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">Text attributes _italic_, *italic*, __bold__, **bold**, <span class="bn">`monospace`</span>.</code></pre></div>
 <p>Which would you choose?</p>
 <p>Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and to reproduce them. The Markdown language encourages reproducibility through providing a simple and easy-to-read platform for writing text documents.</p>
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="gnu-make-and-makefiles">GNU Make and Makefiles</h2>
+<p>&quot;<strong>GNU Make</strong> is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the <em>makefile</em>, which lists each of the non-source files and how to compute it from other files. [1]&quot;. Make allows for a user to write rules for how he created his work; thus, when someone reproduces it, he can follow exactly the procedure used by the original researcher and reproduce results. Put simply, a user creates a Makefile with instructions for the command line to follow; he then runs <em>make</em> and, if written correctly, the commands of his Makefile are executed.</p>
+<p><strong>Example: Make</strong></p>
+<p>Suppose Jared has 3 Markdown files and wants to generate a .PDF file for each one. He wants his cousin John to do the same thing. Jared could write instructions for his cousin, but following those exactly might be difficult, especially if John has a different operating system. So Jared can write the following Makefile:</p>
+<pre><code>output.pdf: *.md
+    pandoc *.md -s -o output.pdf</code></pre>
+<p>that should work for John as well.</p>
+<p>Make allows for improved collaboration and provides an easier way to creating documents and even file systems. This means that Jared's work is better organized and much easier to reproduce.</p>
+<h2 id="git-and-github">Git and Github</h2>
+<div class="figure">
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/git-logo.png" />
+
+</div>
+<p>Git is a free, open-source <em>version control system</em> that allows users to locally and globally create, edit, and organize directories and files; version control systems record changes to files over time so that users can recall specific versions later[3]. Git was created in 2005 by Linus Torvalds, whose goal was to improve efficiency and facilitate collaboration in software development projects.</p>
+<p>How does Git encourage reproducibility?</p>
+<ul>
+<li><p>Git is <strong>free</strong> and <strong>open-source</strong>, allowing anyone access. Git is maintained regularly by Junio Hamano.<br />
+Non-affiliated individuals can download the documentation, reproduce it, and update it.</p></li>
+<li><p>Git is simple and easy to learn. Its command line, Git Bash, works similarly to those built into computers, making the Git system easy to control and access.</p></li>
+<li><p>Git encourages collaboration through its online server <strong>Github</strong>.</p></li>
+</ul>
+<div class="figure">
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/github-logo.png" />
+
+</div>
+<h2 id="pandoc">Pandoc</h2>
+<p>Pandoc is a free software that enables reproducibility by seamlessly allowing a user to convert documents into different file formats via command line prompts. A user can also combine multiple documents into one, allowing for easy collaboration with others. In the following example, Pandoc is used as a tool in reproducing research.</p>
+<div class="figure">
+<img src="C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/pandoc-logo.png" />
+
+</div>
+<p><strong>Example: Using Pandoc to reproduce a .PDF document</strong></p>
+<p>Suppose Hadley wants to make edits to Max's paper that was saved as a .PDF file. Hadley unfortunately does not have access to the costly Adobe software to edit a .PDF by hand, but is proficient in Markdown language. Hadley downloads the .PDF file and simply runs on his command line:</p>
+<pre><code>pandoc paper.pdf -s -o paper.md</code></pre>
+<p>and gets a file called paper.md in his current working directory! He make some edits in Markdown, and runs:</p>
+<pre><code>pandoc paper.md -s -o edited_paper.pdf</code></pre>
+<p>And can now send an edited version of the PDF file to Max.</p>
+<p>In the example, Pandoc allowed Hadley to collaborate in reproducible research without having to use software that he had no access to. As a result, Hadley, or any other researcher in his situation, can edit any type of document by converting it to a form that is readible via a built-in text editor by using a command line (all computers are equipped with a text editor and command line). Work is reproducible if any user can re-create it using the same original data with the same methods and outputting the same results. Reproducibility is an imperative first step in proving the validity of any result. In order for collaborative projects to be reproducible, programmers with the spirit of Open Science have created free, open-source tools Markdown, Pandoc, Git/Github, and Make, all of which improve the structure, speed, and organization of Data Analysis projects. Open Science is a movement towards making all projects freely available online to encourage the sharing of knowledge for advancement. As a result of this movement and the creation of such tools, anyone can reproduce work and take part in advancing the field of Statistical Data Analysis.</p>
+<h2 id="about-my-experience-with-this-project">About My Experience with this Project</h2>
+<p>My initial challenge was mastering the use of Git, which happened quickly after attending the Office Hour of GSI Sindhuja. Writing the Makefile was fun, as the tutorial written by Professor Gaston Sanchez was excellent and easy to follow.</p>
+<p>I actually found the most difficult part to be writing the contents of the paper in a way that is clear and easy to understand. I realize that it is an essential skill for collaborative projects and tutorials I could post on my own website (in development at the moment).</p>
 <h2 id="resources">Resources</h2>
 <p>[1] GNU Make, https://www.gnu.org/software/make/<br />
 [2] Wikipedia, https://en.wikipedia.org/wiki/Markdown</p>
