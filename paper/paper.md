@@ -6,8 +6,8 @@ output:
 title: Stat 159 Project
 ---
 
-Abstract
---------
+Abstract ![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/stat159-logo.png){width="100px"}
+---------------------------------------------------------------------------------------------------------------------------
 
 Reproducibility is key to the advancement of science and has become a
 topic of great importance in the field of Statistical Data Analysis.\
@@ -16,8 +16,6 @@ open science. It then discusses the tools Git, Make, Markdown, and
 Pandoc and their roles in facilitating best practices for open and
 reproducible reserach. This paper draws from concepts taught in Stat
 159.
-
-![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/stat159-logo.png)
 
 What is reproducibility?
 ------------------------
@@ -58,16 +56,16 @@ is open can be reproduced easily.
 > collaborate and contribute, where research data, lab notes and other
 > research processes are freely available, under terms that enable
 > reuse, redistribution and reproduction of the research and its
-> underlying data and methods.\[2\]"
+> underlying data and methods.\[4\]"
 
 This idea has fostered the creation of open-source (meaning that all
 source code and documentation is freely available online) tools that
 encourage the practice of Open Science and ultimately enable
 reproducibility. This paper discusses several of these recent
 developments and explores how they facilitate reproducibility and
-contribute to Open Science. \#\#What makes work reproducible? While
-there do not exist strict guidelines, reproducible works share the
-following characteristics:
+contribute to Open Science. \#What makes work reproducible? While there
+do not exist strict guidelines, reproducible works share the following
+characteristics:
 
 1)  They are publically available and accessible, encouraging
     Open Science.
@@ -93,10 +91,8 @@ All of these tools are *free* and *open-source*, and each project
 encourages users to contribute their work to the movement of Open
 Science.
 
-Markdown
---------
-
-![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png)
+Markdown ![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/markdown-logo.png){width="100px"}
+============================================================================================================================
 
 Created in 2004 by John Gruber and Aaron Swartz, *Markdown* is a simple
 markup language with plain text that can be converted to HTML \[2\].
@@ -135,7 +131,7 @@ reproducibility through providing a simple and easy-to-read platform for
 writing text documents.
 
 GNU Make and Makefiles
-----------------------
+======================
 
 "**GNU Make** is a tool which controls the generation of executables and
 other non-source files of a program from the program's source files.
@@ -165,10 +161,11 @@ Make allows for improved collaboration and provides an easier way to
 creating documents and even file systems. This means that Jared's work
 is better organized and much easier to reproduce.
 
-Git and Github
---------------
+Git and Github ![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/git-logo.png){width="120px"}
+=============================================================================================================================
 
-![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/git-logo.png)
+Git
+---
 
 Git is a free, open-source *version control system* that allows users to
 locally and globally create, edit, and organize directories and files;
@@ -190,18 +187,26 @@ How does Git encourage reproducibility?
 
 -   Git encourages collaboration through its online server **Github**.
 
-![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/github-logo.png)
+Github ![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/github-logo.png){width="150px"}
+------------------------------------------------------------------------------------------------------------------------
+
+**Github** hosts Git online by allowing users to create account and host
+private and/or public repositories. It is the largest online host of
+source code in the world, with over 14 million users as of April 2016.
+The contribution Github has to reproducibility by expanding
+collaboration. Public Repositories become resources open to
+reproducibility.
 
 Pandoc
 ------
+
+![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/pandoc-logo.png){width="350px"}
 
 Pandoc is a free software that enables reproducibility by seamlessly
 allowing a user to convert documents into different file formats via
 command line prompts. A user can also combine multiple documents into
 one, allowing for easy collaboration with others. In the following
 example, Pandoc is used as a tool in reproducing research.
-
-![](C:/Users/Nura/Desktop/Fall%202016/Stat%20159/stat159-fall2016-project1/images/pandoc-logo.png)
 
 **Example: Using Pandoc to reproduce a .PDF document**
 
@@ -240,18 +245,23 @@ Statistical Data Analysis.
 About My Experience with this Project
 -------------------------------------
 
-My initial challenge was mastering the use of Git, which happened
-quickly after attending the Office Hour of GSI Sindhuja. Writing the
-Makefile was fun, as the tutorial written by Professor Gaston Sanchez
-was excellent and easy to follow.
-
-I actually found the most difficult part to be writing the contents of
-the paper in a way that is clear and easy to understand. I realize that
-it is an essential skill for collaborative projects and tutorials I
-could post on my own website (in development at the moment).
+This project took one week because I split my work over several days,
+and I worked alone. My initial challenge was mastering the use of Git,
+which happened quickly after attending the Office Hour of GSI Sindhuja.
+Thus, using Git became the easy part. Writing the Makefile was fun, as
+the tutorial written by Professor Gaston Sanchez was excellent and easy
+to follow, so it was relatively easy. I actually found the most
+difficult part to be writing the contents of the paper in a way that is
+clear and easy to understand. I realize that it is an essential skill
+for collaborative projects and tutorials I could post on my own website
+(in development at the moment).
 
 Resources
 ---------
 
 \[1\] GNU Make, https://www.gnu.org/software/make/\
-\[2\] Wikipedia, https://en.wikipedia.org/wiki/Markdown
+\[2\] Wikipedia, https://en.wikipedia.org/wiki/Markdown\
+\[3\] Simply Statistics,
+http://simplystatistics.org/2014/06/06/the-real-reason-reproducible-research-is-important/\
+\[4\] Open Science,
+https://www.fosteropenscience.eu/foster-taxonomy/open-science-definition

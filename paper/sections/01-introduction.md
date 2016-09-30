@@ -13,6 +13,6 @@ The requirement of reproducibility also places a check on accidental results, ca
 
 _Open Science_ encourages researchers to make the entirety of their work - data, methods, and computer scripts - publically available. Work that is open can be reproduced easily. 
 
->"Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.[2]"  
+>"Open Science is the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods.[4]"  
 
 This idea has fostered the creation of open-source (meaning that all source code and documentation is freely available online) tools that encourage the practice of Open Science and ultimately enable reproducibility. This paper discusses several of these recent developments and explores how they facilitate reproducibility and contribute to Open Science.

@@ -1,4 +1,4 @@
-##What makes work reproducible?
+#What makes work reproducible?
 While there do not exist strict guidelines, reproducible works share the following characteristics:  
 
 1)	They are publically available and accessible, encouraging Open Science.
@@ -9,10 +9,7 @@ We will see that tools that facilitate reproducible research make improvements i
 
 All of these tools are  _free_ and _open-source_, and each project encourages users to contribute their work to the movement of Open Science. 
 
-
-##Markdown
-
-![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/markdown-logo.png)
+#Markdown ![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/markdown-logo.png){width=100px}
 
 Created in 2004 by John Gruber and Aaron Swartz, _Markdown_ is a simple markup language with plain text that can be converted to HTML [2]. __Markdown encourages reproducibility through its simplicity and readability__. Markdown is extremely easy to learn and to follow, while HTML (and similar languages) has syntax that is more complex. Furthermore, Markdown documents can be read as-is, whereas Rich Text Formals and HTML surround words by tags that clutter the text. Take a look at the example below:
 
@@ -39,7 +36,7 @@ Which would you choose?
 
 Clearly, Markdown language is easier to read. As a result, README files are often written in Markdown, making it easier for users to understand instructions and to reproduce them. The Markdown language encourages reproducibility through providing a simple and easy-to-read platform for writing text documents.
 
-##GNU Make and Makefiles
+#GNU Make and Makefiles
 
 "**GNU Make** is a tool which controls the generation of executables and other non-source files of a program from the program's source files. Make gets its knowledge of how to build your program from a file called the *makefile*, which lists each of the non-source files and how to compute it from other files. [1]". Make allows for a user to write rules for how he created his work; thus, when someone reproduces it, he can follow exactly the procedure used by the original researcher and reproduce results. Put simply, a user creates a Makefile with instructions for the command line to follow; he then runs _make_ and, if written correctly, the commands of his Makefile are executed.
 
@@ -57,11 +54,10 @@ that should work for John as well.
 Make allows for improved collaboration and provides an easier way to creating documents and even file systems. This means that Jared's work is better organized and much easier to reproduce.
 
 
-##Git and Github
-
-![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/git-logo.png)
+#Git and Github ![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/git-logo.png){width=120px}
 
 
+##Git
 Git is a free, open-source _version control system_ that allows users to locally and globally create, edit, and organize directories and files; version control systems record changes to files over time so that users can recall specific versions later[3].  Git was created in 2005 by Linus Torvalds, whose goal was to improve efficiency and facilitate collaboration in software development projects.  
 
 How does Git encourage reproducibility?  
@@ -75,18 +71,15 @@ Non-affiliated individuals can download the documentation, reproduce it, and upd
 + Git encourages collaboration through its online server __Github__.
 
 
+##Github ![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/github-logo.png){width=150px}
 
-![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/github-logo.png)
 
+__Github__ hosts Git online by allowing users to create account and host private and/or public repositories. It is the largest online host of source code in the world, with over 14 million users as of April 2016. The contribution Github has to reproducibility by expanding collaboration. Public Repositories become resources open to reproducibility. 
 
-##Pandoc
+##Pandoc 
+![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/pandoc-logo.png){width=350px}
 
 Pandoc is a free software that enables reproducibility by seamlessly allowing a user to convert documents into different file formats via command line prompts. A user can also combine multiple documents into one, allowing for easy collaboration with others. In the following example, Pandoc is used as a tool in reproducing research.
-
-
-![](C:/Users/Nura/Desktop/Fall 2016/Stat 159/stat159-fall2016-project1/images/pandoc-logo.png)
-
-
 
 __Example: Using Pandoc to reproduce a .PDF document__
 
